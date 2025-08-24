@@ -10,7 +10,7 @@ const Card = ({ title}) => {
   return(
     <div className='card' >
      <h2>{title}</h2>
-     <button onClick={() => setHasliked(true)}>
+     <button onClick={() => setHasliked(!hasliked)}>
       {hasliked ? '❤️' : '🤍'}
      </button>
      
